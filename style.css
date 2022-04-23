@@ -46,6 +46,9 @@ h1 {
   height: auto;
   text-align: center;
   margin: 45px auto 0 auto;
+  font-size: 28px;
+  font-weight: 900;
+  color: var(--dark-grey);
 }
 
 .text-resume {
@@ -105,7 +108,7 @@ h1 {
 }
 input[type="submit"] {
   display: block;
-  max-width: 354px;
+  width: 80%;
   min-width: 279px;
   height: 50px;
   margin: 32px auto 0 auto;
@@ -131,9 +134,11 @@ input[type="submit"]:hover {
   height: 20px;
   margin: 32px auto 48px auto;
   color: var(--light-grey);
+  font-weight: 900;
 }
 
 .cancel-order:hover {
+  font-weight: 900;
   color: var(--dark-grey);
   cursor: pointer;
 }
