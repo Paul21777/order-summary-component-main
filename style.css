@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  --dark-grey: #1f2e55;
+  --light-grey: #717fa6;
+  --purple-custom: #382ae1;
+  --purple-custom-hover: #766cf1;
+
+  background-color: #d6e1ff;
+  font-family: "Red Hat Display";
+  font-size: 16px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  max-width: 450px;
+  max-height: auto;
+  min-width: 327px;
+  min-height: auto;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
+  transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
+}
+
+@media screen and (max-width: 375px) {
+  .order-resume {
+    font-size: 14px;
+  }
+}
+
+img {
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+}
+
+h1 {
+  max-width: 354px;
+  min-width: 263px;
+  height: auto;
+  text-align: center;
+  margin: 45px auto 0 auto;
+}
+
+.text-resume {
+  max-width: 354px;
+  min-width: 263px;
+  height: auto;
+  color: var(--light-grey);
+  line-height: 26px;
+  text-align: center;
+  margin: 17px auto 0 auto;
+  font-size: 16px;
+}
+
+.order-resume {
+  display: flex;
+  width: 80%;
+  min-width: 279px;
+  height: 98px;
+  border-radius: 11px;
+  background-color: #f7f9ff;
+  align-items: center;
+  margin: 20px auto 0 auto;
+}
+
+.music-icon {
+  padding-left: 24px;
+}
+
+.price {
+  width: 92px;
+  height: 48px;
+  color: var(--light-grey);
+  margin-left: 20px;
+  line-height: 21px;
+}
+
+.time-plan {
+  color: var(--dark-grey);
+  font-weight: 900;
+  margin-bottom: 6px;
+  display: inline-block;
+}
+
+.change {
+  text-decoration: underline;
+  color: var(--purple-custom);
+  width: 52px;
+  text-align: end;
+  margin-right: 24px;
+  flex: 2 52px;
+}
+
+.change:hover {
+  text-decoration: none;
+  color: var(--purple-custom-hover);
+  cursor: pointer;
+}
+input[type="submit"] {
+  display: block;
+  max-width: 354px;
+  min-width: 279px;
+  height: 50px;
+  margin: 32px auto 0 auto;
+  border: 0;
+  border-radius: 11px;
+  box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+  background-color: var(--purple-custom);
+  font-family: "Red Hat Display";
+  font-weight: 900;
+  font-size: 15px;
+  color: white;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--purple-custom-hover);
+  cursor: pointer;
+}
+
+.cancel-order {
+  font-size: 15px;
+  width: 96px;
+
+  height: 20px;
+  margin: 32px auto 48px auto;
+  color: var(--light-grey);
+}
+
+.cancel-order:hover {
+  color: var(--dark-grey);
+  cursor: pointer;
+}
